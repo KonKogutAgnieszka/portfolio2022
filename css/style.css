@@ -135,3 +135,28 @@ nav { display: none; }
         width:calc(100%+1.5em)
     }
 }
+
+/* technologies section */ 
+
+.my-technologies{
+    background-color: var(--clr-dark);
+    background-image: url(/img/technologies-bg.jpg);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--technologies{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--technologies::after{
+content:'';
+display:block;
+width: 20%;
+height: 1px;
+margin: 0.5em auto 1em;
+background: var(--clr-light);
+opacity:0.5;
+}
