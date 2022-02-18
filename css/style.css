@@ -170,6 +170,66 @@ nav { display: none; }
     text-align: center;
 }
 
+.technologies{
+    margin:0 auto;
+    width: 70%;
+    display:grid;
+
+}
+
+.technology{
+    width:80%;
+    justify-content: center;
+}
+
+.technology i{
+font-size:60px;
+}
+
+.technology p{
+    opacity: 0.0;
+    transform:translate(0, -40px);
+    font-weight: var(--fw-bold);
+    text-transform:uppercase;
+    text-align: center;
+}
+
+i:hover+p{
+   opacity:1.0;
+   transform:translate(0,0);
+   transition:1s;
+}
+
+/* technologies hover */
+
+.technology i:hover{
+    transition:1s;
+}
+
+.fa-html5:hover{
+    color:#F1662A;
+}
+
+.fa-css3-alt:hover{
+   color: #33A9DC;
+}
+
+.fa-js:hover{
+    color:#F7DF1E;
+}
+
+.fa-react:hover{
+    color:#61DAFB;
+}
+
+.fa-git-alt:hover{
+    color:#F05133;
+}
+
+.fa-github:hover{
+    color:#3E75C3;
+}
+
 .section__title--technologies{
     color: var(--clr-accent);
     position: relative;
@@ -180,7 +240,7 @@ content:'';
 display:block;
 width: 3em;
 height: 1px;
-margin: 0.5em auto 1em;
+margin: 0.5em auto 0.5em;
 background: var(--clr-light);
 opacity:0.5;
 }
@@ -196,5 +256,31 @@ i{
         display:flex;
         max-width: 1000px;
         margin:0 auto;
+    }
+}
+
+/* About me */
+.about-me{
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+@media (min-width:600px){
+    .about-me{
+        display:grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+    }
+
+    .section__title--about,
+    .section__subtitle--about {
+        grid-column: 1;
+    }
+
+    .about-me__img{
+        grid-area:img;
     }
 }
