@@ -64,6 +64,7 @@ strong { font-weight: var(--fw-bold) }
 /* Button */
 .btn{
     display: inline-block;
+    text-align: center;
     padding: .5em 1.5em;
     background: var(--clr-accent);
     color:var(--clr-dark);
@@ -143,7 +144,6 @@ nav { display: none; }
 
 @media (min-width:600px){
     .intro{
-        margin: 0 auto;
         display:grid;
         grid-column-gap:1em;
         width:min-content;
@@ -302,6 +302,7 @@ i{
 }
 
 .my-work{
+    margin:0 auto;
     background-color:var(--clr-dark);
     color:var(--clr-light);
     text-align: center;
@@ -313,24 +314,79 @@ i{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
+/* item animation */
+
 .portfolio__item{
-    color:rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0%);
     position: relative;
-    transition: 1s;
+    transition:0.5s;
+}
+
+.portfolio__item:hover{
+    color:rgba(0, 0, 0, 100%);
+    transition: 0.5s;
+    filter: grey; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
 .portfolio__item--about{
+    font-weight: var(--fw-reg);
+    font-size:var(--fs-h3);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 
 }
 
-.portfolio__item:hover{
-    color:rgba(256, 256, 256, 100%);
-    transition: 1s;
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+.item-icon{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.5em;
+}
+
+/*footer*/
+
+.footer{
+    background: #111111;
+    color:var(--clr-accent);
+    text-align: center;
+    padding:2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.footer__link{
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover{
+opacity: .8;
+}
+
+.footer__link:hover{
+    text-decoration:underline;
+}
+
+.social-list{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin:2em 0 0;
+    padding: 0;
+}
+
+.social-list__item{
+    margin:0 .5em;
+}
+
+.social-list__link{
+    padding: .5em;
 }
