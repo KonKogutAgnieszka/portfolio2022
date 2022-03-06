@@ -97,6 +97,10 @@ h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
+/*svg background*/
+.svg-bg{
+background-image: url('img/logo_png_outline.svg');
+}
 
 /*Intro*/
 
@@ -148,6 +152,8 @@ header{
 .logo{
     max-width: 100px;
 }
+
+/*navigation*/
 
 .nav { 
     position: fixed;
@@ -433,17 +439,21 @@ i{
     color:rgba(0, 0, 0, 0%);
     position: relative;
     transition:0.5s;
-}
-
-.portfolio__item:hover{
-    color:rgba(0, 0, 0, 100%);
-    transition: 0.5s;
     filter: grey; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
+.portfolio__item:hover{
+    color:rgba(0, 0, 0, 100%);
+    transition: 0.5s;
+    filter: none; /* IE6-9 */
+    -webkit-filter: none; /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: none; /* Microsoft Edge and Firefox 35+ */
+}
+
 .portfolio__item--about{
+    display:inline-block;
     font-weight: var(--fw-reg);
     font-size:var(--fs-h3);
     position: absolute;
@@ -454,10 +464,9 @@ i{
 
 }
 
-.item-icon{
-    text-decoration: none;
-    color:inherit;
-    font-size: 1.5em;
+.portfolio__item-icon{
+    font-size: var(--fs-body);
+    color: var(--clr-dark);
 }
 
 /*footer*/
@@ -502,4 +511,17 @@ opacity: .8;
 
 .social-list__link{
     padding: .5em;
+}
+
+/*individual portfolio item styles */
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
