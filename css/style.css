@@ -21,6 +21,7 @@
     --fs-h1: 2.5rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fds-h4: 1rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
@@ -96,11 +97,9 @@ h3{
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+h4 { font-size: var(--fs-h4) }
 
-/*svg background*/
-.svg-bg{
-background-image: url('img/logo_png_outline.svg');
-}
+
 
 /*Intro*/
 
@@ -453,6 +452,7 @@ i{
 }
 
 .portfolio__item--about{
+    margin:0 auto;
     display:inline-block;
     font-weight: var(--fw-reg);
     font-size:var(--fs-h3);
@@ -464,10 +464,7 @@ i{
 
 }
 
-.portfolio__item-icon{
-    font-size: var(--fs-body);
-    color: var(--clr-dark);
-}
+
 
 /*footer*/
 
