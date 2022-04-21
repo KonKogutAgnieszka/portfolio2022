@@ -464,6 +464,15 @@ i{
 
 }
 
+a{
+    color:inherit;
+    
+}
+
+i.fa-github:hover{
+    color:black;
+}
+
 
 
 /*footer*/
