@@ -12,6 +12,7 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg:300;
+    --fw-about:500;
     --fw-bold:900;
 
     --clr-light:#D4D4D4;
@@ -22,7 +23,7 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fds-h4: 1rem;
-    --fs-body: 1rem;
+    --fs-body: 1.8rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
 
@@ -30,8 +31,8 @@
 
 @media(min-width: 800px){
     :root{
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h1: 3.8rem;
+        --fs-h2: 3.65rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem; 
     }
@@ -388,6 +389,11 @@ i{
     box-shadow:var(--bs);
 }
 
+.about-me__body{
+    font-weight: var(--fw-about);
+    font-size: 1.5rem;
+}
+
 @media (min-width:600px){
     .about-me{
         display: grid;
@@ -430,6 +436,7 @@ i{
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding:4em;
 }
 
 /* item animation */
@@ -469,13 +476,18 @@ a{
     
 }
 
-i.fa-github:hover{
+i.git-code:hover{
     color:black;
 }
 
 
 
 /*footer*/
+
+.logo_red{
+    max-width: 100px;
+    margin:2em auto 0;
+}
 
 .footer{
     background: #111111;
