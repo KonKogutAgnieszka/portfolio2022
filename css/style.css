@@ -71,6 +71,7 @@ strong { font-weight: var(--fw-bold) }
 /* Button */
 .btn{
     display: inline-block;
+    text-align: center;
     padding: .5em 1.5em;
     background: var(--clr-accent);
     color:var(--clr-dark);
@@ -106,6 +107,7 @@ h4 { font-size: var(--fs-h4) }
 
 .intro{
 margin: 0 auto;
+
 }
 
 .section__title{
@@ -265,7 +267,7 @@ background: var(--clr-light);
     .intro{
         display:grid;
         grid-column-gap:1em;
-        width:min-content;
+        max-width:min-content;
         grid-template-areas:
         "img title"
         "img subtitle";
@@ -425,6 +427,8 @@ i{
     }
 }
 
+/*my work*/
+
 .my-work{
     margin:0 auto;
     background-color:var(--clr-dark);
@@ -436,7 +440,43 @@ i{
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    padding:4em;
+    padding: 4em;
+}
+
+@media(max-width: 600px){
+    .portfolio{
+        padding:0;
+    }
+}
+
+@media(max-width: 400px){
+    .portfolio{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
+    .portfolio__item--about{
+        font-size: calc(var(--fs-h3) / 2);
+        padding: 0;
+    
+    }
+
+    .fa-2x{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 300px){
+    .portfolio{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+
+    .portfolio__item--about{
+        font-size: calc(var(--fs-h3) / 3);
+    }
+
+    .fa-2x{
+        font-size: 1.2em;
+    }
 }
 
 /* item animation */
@@ -479,7 +519,6 @@ a{
 i.git-code:hover{
     color:black;
 }
-
 
 
 /*footer*/
