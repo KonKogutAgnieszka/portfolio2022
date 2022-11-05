@@ -17,7 +17,7 @@ PORTFOLIO :horse: :chicken:
 
 - My personal portfolio :woman:
 - purpose of this project is to show my skills and projects
-- first attempt to build website from sratch 
+- first attempt to build website from scratch
 
 ## Technologies Used
 
@@ -46,12 +46,10 @@ Room for improvement:
 
 To do:
 
-- [ ] english version, 
+- [ ] english version,
 - [ ] subpage,
 - [ ] blog
 
 ## Acknowledgements
 
 - This project was based on [this tutorial](https://scrimba.com/learn/portfolio).
-
-
