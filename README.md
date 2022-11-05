@@ -26,6 +26,7 @@ html css javascript
 ## Features
 
 -responsive,
+
 -simple animations
 
 ## Screenshots
