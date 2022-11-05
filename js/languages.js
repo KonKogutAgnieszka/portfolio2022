@@ -14,6 +14,8 @@ const data = {
     about__education:
       "Wykształcenie:<br />średnie - plastyk - specjalność formy użytkowe<br />wyższe - mgr inż - specjalność informartyka stosowana w technice<br />",
     // work section //
+    portfolio__title: "projekty",
+    portfolio__subtitle: "moje prace",
     portfolio__1__about: "gra podsumowująca pierwszy etap nauki javascript",
     portfolio__2__about: "prosta gra z wykorzystaniem OOP",
     portfolio__3__about: "strona firmy ANKON",
@@ -34,6 +36,8 @@ const data = {
     about__education:
       "Education:<br />secondary education - art shool - utility forms <br />higher education - mgr inż - computer science applied in technology <br />",
     // work section //
+    portfolio__title: "projects",
+    portfolio__subtitle: "moje works",
     portfolio__1__about: "first game in javascript",
     portfolio__2__about: "simple OOP game",
     portfolio__3__about: "ANKON website [PL]",
