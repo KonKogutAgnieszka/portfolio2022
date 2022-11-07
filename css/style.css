@@ -151,8 +151,24 @@ header{
 
 
 
-.logo{
-    max-width: 100px;
+.languages{
+    display: flex;
+    flex-direction: row;
+    max-width: 65px;
+}
+
+.lang_pl, .lang_eng{
+    display: block;
+    filter: grayscale();
+    transition: 1s;
+}
+
+.lang_pl:hover ,.lang_eng:hover{
+filter: none;
+}
+
+.lang_pl.active_lang,.lang_eng.active_lang{
+    filter: none;
 }
 
 /*navigation*/

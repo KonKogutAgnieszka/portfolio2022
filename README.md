@@ -42,12 +42,11 @@ Project is: _in progress_
 
 Room for improvement:
 
-- add english version,
 - add small project to subpage,
 
 To do:
 
-- [ ] english version,
+- [x] english version,
 - [ ] subpage,
 - [ ] blog
 
